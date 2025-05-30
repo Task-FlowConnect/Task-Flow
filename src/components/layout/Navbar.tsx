@@ -23,8 +23,8 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center -ml-5">
             <Link to="/" className="flex items-center -ml-5 mb-2">
-              <img src="sitelogo.png" alt="Task-Flow-Logo" className="h-12 w-12 mt-1" />
-              <span className="ml-1 text-2xl font-bold italic text-white mt-1">Task Flow</span>
+              <img src="sitelogo.png" alt="Task-Flow-Logo" className="h-14 w-14 mt-1" />
+              <span className="-ml-1 text-2xl font-bold italic text-white mt-1">Task Flow</span>
             </Link>
           </div>
 
@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
             <div className="ml-4 flex items-center space-x-2">
               <Link
                 to="/signup"
-                className="px-4 py-2 rounded-md text-sm font-medium text-white bg-blue-600 hover:bg-blue-700"
+                className="px-4 py-2 rounded-2xl text-sm font-medium text-gray bg-slate-300 hover:bg-slate-200"
               >
               Login / Sign Up
               </Link>
