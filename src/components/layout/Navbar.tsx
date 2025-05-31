@@ -18,13 +18,13 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md fixed w-full z-50">
+    <nav className="bg-gray-800 shadow-md fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          <div className="flex items-center">
-            <Link to="/" className="flex items-center">
-              <Activity className="h-8 w-8 text-blue-600" />
-              <span className="ml-2 text-xl font-bold text-gray-800">Task Flow</span>
+          <div className="flex items-center -ml-5">
+            <Link to="/" className="flex items-center -ml-5 mb-2">
+              <img src="sitelogo.png" alt="Task-Flow-Logo" className="h-14 w-14 mt-1" />
+              <span className="-ml-1 text-2xl font-bold italic text-white mt-1">Task Flow</span>
             </Link>
           </div>
 
@@ -34,10 +34,10 @@ const Navbar: React.FC = () => {
               <Link
                 key={item.href}
                 to={item.href}
-                className={`px-3 py-2 rounded-md text-sm font-medium ${
+                className={`px-3 py-2 rounded-md text-md font-medium font-bold italic text-black-600 ${
                   location.pathname === item.href
-                    ? 'bg-blue-100 text-blue-700'
-                    : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'
+                    ? 'bg-slate-300 text-black-600'
+                    : 'text-white hover:bg-slate-300 hover:text-black hover:transition-all duration-700 ease-int-out'
                 }`}
               >
                 {item.label}
@@ -46,9 +46,9 @@ const Navbar: React.FC = () => {
             <div className="ml-4 flex items-center space-x-2">
               <Link
                 to="/signup"
-                className="px-4 py-2 rounded-md text-sm font-medium text-white bg-blue-600 hover:bg-blue-700"
+                className="px-4 py-2 rounded-2xl text-sm font-medium text-gray bg-slate-300 hover:bg-slate-200"
               >
-                Login / Sign Up
+              Login / Sign Up
               </Link>
             </div>
           </div>
